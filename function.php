@@ -29,6 +29,17 @@
 				return $toplantiSure ;
 
 							}
+
+		function Days_Update($value){
+				
+				$today_date					=		time();
+				
+				$fark 	      	=	abs($value-$today_date);
+				$toplantiSure	=	round($fark/60/60/24);
+
+				return $toplantiSure ;
+
+							}
 		
 		function Name_Server_IP($value){
 
