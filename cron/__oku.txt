@@ -1,0 +1,4 @@
+Merhaba,
+
+
+(browserda acık bırakılırsa localhost için düşünüldü. cron ile sunucuda sürekli çalıştırılabilir.)
