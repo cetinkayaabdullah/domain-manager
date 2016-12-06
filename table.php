@@ -103,6 +103,7 @@
                           <th>Expiration Date</th>
                           <th>Registered Company</th>
                           <th>Day</th>
+                          <th>Last Check Date</th>
                           <th>Actions</th>
                         </tr>
                       </thead>
@@ -116,6 +117,7 @@
                             <td><?php echo date('d/m/Y',$db_rows->domain_expiration_date);?></td>
                             <td><?php Registered($db_rows->domain_company);?></td>
                             <td><?php echo Days_Remaining($db_rows->domain_id);?></td>
+                            <td><?php echo date('d/m/Y h:i:s',$db_rows->domain_update_date);?></td>
                             <td>
                             <a href='<?php echo $_link.'delete.php?id='.$db_rows->domain_id;?>'>
                                 <i class='fa fa-trash'></i>
