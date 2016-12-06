@@ -1,4 +1,6 @@
 Merhaba,
 
+cron.php sitelerin acık olup olmadığını şuanlık basit bir şekilde kontrol ediyor. Bunu Sadece Domain Eklerdekn YES seçerseniz yapıyor ve domain panelinde listeliyor.
 
+autoupload.php ise her 10 saniyede bir en son guncelleme tarihine sahib bir domain kontrol ediyor.
 (browserda acık bırakılırsa localhost için düşünüldü. cron ile sunucuda sürekli çalıştırılabilir.)
