@@ -262,6 +262,10 @@
                 </div>
               </div>
               <?php } ?>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                
+                <iframe src="<?php echo $link = trim ('http://whois.hosting.info.tr/'.$row->domain_link); ?>" width="1632" height="500"></iframe>
+              </div>
             </div>          
           </div>
          
