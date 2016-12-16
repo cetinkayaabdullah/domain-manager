@@ -2,7 +2,6 @@
 		/* Veri Tabanı Bağlantısı */
 		require_once "db/db.php";
 		
-		
 		function Connect($url){
 												$curl = curl_init();
 												curl_setopt($curl, CURLOPT_URL, $url);
@@ -128,4 +127,22 @@
 								        }
     	}
     	/*R10.net @Justian0 */
+
+        function MoneyTotal($value){
+            global $db;
+            $total = 0;
+            $get_results   =   $db->get_results("SELECT * FROM domain_money WHERE money_domain_id = '$value' ");
+            if ( $db->num_rows >= '1'){
+                foreach ( $get_results as $db_rows ){
+                    $total = $total+$db_rows->money_value;
+                }
+                return $total;
+            }else{
+
+                $total = "0";
+                return $total;
+
+            }
+
+        };
 ?>

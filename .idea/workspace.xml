@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26c9d1fa-1409-4f78-9315-6133cfbc6367" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron/cron.php" afterPath="$PROJECT_DIR$/cron/cron.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/86e90724-52c1-4ace-badb-4f0ad2045b14.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/86e90724-52c1-4ace-badb-4f0ad2045b14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function.php" afterPath="$PROJECT_DIR$/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,6 +33,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="domain_money" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -43,6 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cron/cron.php" />
+        <option value="$PROJECT_DIR$/function.php" />
+        <option value="$PROJECT_DIR$/view.php" />
       </list>
     </option>
   </component>
@@ -54,9 +72,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="147" />
-    <option name="width" value="1924" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
@@ -74,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -97,12 +114,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cron" />
+              <option name="myItemId" value="include" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -110,6 +128,11 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -123,20 +146,21 @@
       <updated>1481203418114</updated>
       <workItem from="1481203419438" duration="86000" />
       <workItem from="1481619812853" duration="618000" />
+      <workItem from="1481897778005" duration="3852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="704000" />
+    <option name="totallyTimeSpent" value="4556000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="147" width="1924" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08681672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.087326944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08949625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1682641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -159,7 +183,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -203,6 +229,72 @@
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding>
             <marker date="1481619822522" expanded="true" signature="121:200" ph="SELECT * FRO... domain_list" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="38" selection-end-column="88" />
+          <folding>
+            <marker date="1479816437784" expanded="true" signature="724:1730" ph="INSERT INTO domain_list... " />
+            <marker date="1479816437784" expanded="true" signature="8003:8032" ph="SELECT * FRO... registered_list" />
+            <marker date="1479816437784" expanded="true" signature="12055:12087" ph="..." />
+            <marker date="1479816437784" expanded="true" signature="13637:13644" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_money">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="271" column="120" lean-forward="false" selection-start-line="271" selection-start-column="120" selection-end-line="271" selection-end-column="120" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1481901202698" expanded="true" signature="399:1312" ph="INSERT INTO domain_money... " />
+            <marker date="1481901202698" expanded="true" signature="1607:1695" ph="SELECT * FRO... domain_list" />
+            <marker date="1481901202698" expanded="true" signature="10466:10533" ph="SELECT * FRO... registered_list" />
+            <marker date="1481901202698" expanded="true" signature="10813:10842" ph="SELECT * FRO... registered_list" />
+            <marker date="1481901202698" expanded="true" signature="16971:17058" ph="SELECT * FRO... domain_logs" />
+            <marker date="1481901202698" expanded="true" signature="21046:21078" ph="..." />
+            <marker date="1481901202698" expanded="true" signature="22628:22635" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="133" column="82" lean-forward="false" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="97" />
+          <folding>
+            <element signature="n#Connect#0;n#!!top" expanded="false" />
+            <element signature="n#Days_Remaining#0;n#!!top" expanded="false" />
+            <element signature="n#Days_Update#0;n#!!top" expanded="false" />
+            <element signature="n#Name_Server_IP#0;n#!!top" expanded="false" />
+            <element signature="n#login#0;n#!!top" expanded="false" />
+            <element signature="n#Registered#0;n#!!top" expanded="false" />
+            <element signature="n#Link_Control#0;n#!!top" expanded="false" />
+            <marker date="1481901029183" expanded="true" signature="582:666" ph="SELECT * FRO... domain_list" />
+            <marker date="1481901029183" expanded="true" signature="1822:1875" ph="SELECT * FRO... registered_list" />
+            <marker date="1481901029183" expanded="true" signature="2846:3513" ph="INSERT INTO domain_logs... " />
+            <marker date="1481901029183" expanded="true" signature="3676:4345" ph="INSERT INTO domain_logs... " />
+            <marker date="1481901029183" expanded="true" signature="4537:4570" ph="SELECT * FRO... ${$value1}" />
+            <marker date="1481901029183" expanded="true" signature="4537:4596" ph="SELECT * FRO... domain_money" />
           </folding>
         </state>
       </provider>

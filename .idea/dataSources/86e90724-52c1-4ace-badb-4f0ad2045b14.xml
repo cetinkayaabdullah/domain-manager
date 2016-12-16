@@ -13,183 +13,214 @@
     <schema id="7" parent="1" name="rss"/>
     <schema id="8" parent="1" name="test"/>
     <schema id="9" parent="1" name="warehouse_system"/>
-    <table id="10" parent="2" name="domain_list"/>
-    <table id="11" parent="2" name="domain_logs"/>
-    <table id="12" parent="2" name="registered_list"/>
-    <table id="13" parent="2" name="user"/>
-    <column id="14" parent="10" name="domain_id">
+    <schema id="10" parent="1" name="panel"/>
+    <table id="11" parent="2" name="domain_list"/>
+    <table id="12" parent="2" name="domain_logs"/>
+    <table id="13" parent="2" name="domain_money"/>
+    <table id="14" parent="2" name="registered_list"/>
+    <table id="15" parent="2" name="user"/>
+    <column id="16" parent="11" name="domain_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="15" parent="10" name="domain_link">
+    <column id="17" parent="11" name="domain_link">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="16" parent="10" name="domain_ext">
+    <column id="18" parent="11" name="domain_ext">
       <Position>3</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="17" parent="10" name="domain_company">
+    <column id="19" parent="11" name="domain_company">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="18" parent="10" name="domain_ns1">
+    <column id="20" parent="11" name="domain_ns1">
       <Position>5</Position>
       <DataType>varchar(225)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="10" name="domain_ns2">
+    <column id="21" parent="11" name="domain_ns2">
       <Position>6</Position>
       <DataType>varchar(225)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="10" name="domain_ns3">
+    <column id="22" parent="11" name="domain_ns3">
       <Position>7</Position>
       <DataType>varchar(225)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="10" name="domain_ip1">
+    <column id="23" parent="11" name="domain_ip1">
       <Position>8</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="10" name="domain_ip2">
+    <column id="24" parent="11" name="domain_ip2">
       <Position>9</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="10" name="domain_ip3">
+    <column id="25" parent="11" name="domain_ip3">
       <Position>10</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="24" parent="10" name="domain_update_date">
+    <column id="26" parent="11" name="domain_update_date">
       <Position>11</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="25" parent="10" name="domain_expiration_date">
+    <column id="27" parent="11" name="domain_expiration_date">
       <Position>12</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="10" name="domain_creation_date">
+    <column id="28" parent="11" name="domain_creation_date">
       <Position>13</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="10" name="domain_content">
+    <column id="29" parent="11" name="domain_content">
       <Position>14</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="28" parent="10" name="domain_status">
+    <column id="30" parent="11" name="domain_status">
       <Position>15</Position>
       <DataType>int(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="10" name="domain_tracking">
+    <column id="31" parent="11" name="domain_tracking">
       <Position>16</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="30" parent="10" name="domain_id">
+    <index id="32" parent="11" name="domain_id">
       <ColNames>domain_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="31" parent="10" name="domain_id">
+    <key id="33" parent="11" name="domain_id">
       <ColNames>domain_id</ColNames>
       <UnderlyingIndexName>domain_id</UnderlyingIndexName>
     </key>
-    <column id="32" parent="11" name="logs_id">
+    <column id="34" parent="12" name="logs_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="33" parent="11" name="logs_link">
+    <column id="35" parent="12" name="logs_link">
       <Position>2</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="34" parent="11" name="logs_time">
+    <column id="36" parent="12" name="logs_time">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="11" name="logs_type">
+    <column id="37" parent="12" name="logs_type">
       <Position>4</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="36" parent="11" name="logs_id">
+    <index id="38" parent="12" name="logs_id">
       <ColNames>logs_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="37" parent="11" name="logs_id">
+    <key id="39" parent="12" name="logs_id">
       <ColNames>logs_id</ColNames>
       <UnderlyingIndexName>logs_id</UnderlyingIndexName>
     </key>
-    <column id="38" parent="12" name="reg_id">
+    <column id="40" parent="13" name="money_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="39" parent="12" name="reg_title">
+    <column id="41" parent="13" name="money_domain_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="13" name="money_value">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="13" name="money_time">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="44" parent="13" name="money_id">
+      <ColNames>money_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="13" name="money_id">
+      <ColNames>money_id</ColNames>
+      <UnderlyingIndexName>money_id</UnderlyingIndexName>
+    </key>
+    <column id="46" parent="14" name="reg_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="14" name="reg_title">
       <Position>2</Position>
       <DataType>varchar(250)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="12" name="reg_time">
+    <column id="48" parent="14" name="reg_time">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="41" parent="12" name="reg_id">
+    <index id="49" parent="14" name="reg_id">
       <ColNames>reg_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="42" parent="12" name="reg_id">
+    <key id="50" parent="14" name="reg_id">
       <ColNames>reg_id</ColNames>
       <UnderlyingIndexName>reg_id</UnderlyingIndexName>
     </key>
-    <column id="43" parent="13" name="user_id">
+    <column id="51" parent="15" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="44" parent="13" name="user_name">
+    <column id="52" parent="15" name="user_name">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="45" parent="13" name="user_surname">
+    <column id="53" parent="15" name="user_surname">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="13" name="user_mail">
+    <column id="54" parent="15" name="user_mail">
       <Position>4</Position>
       <DataType>varchar(250)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="13" name="user_pass">
+    <column id="55" parent="15" name="user_pass">
       <Position>5</Position>
       <DataType>varchar(250)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="48" parent="13" name="user_id">
+    <index id="56" parent="15" name="user_id">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="49" parent="13" name="user_id">
+    <key id="57" parent="15" name="user_id">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>

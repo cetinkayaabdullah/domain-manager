@@ -1,7 +1,30 @@
 <?php 
       require_once  "config.php";
-  
-      if ( isset($_GET['id']) and !empty($_GET['id']) ){ 
+
+      if (isset($_GET['amountpaid']) and !empty($_GET['amountpaid'])){
+
+                $amountpaid     =   strip_tags($_GET['amountpaid']);
+                $description    =   strip_tags($_GET['description']);
+                $id             =   strip_tags($_GET['id']);
+                $time           =   time();
+
+                $register = $db->query("INSERT INTO domain_money (
+                                                                        money_domain_id,
+                                                                        money_value,
+                                                                        money_content,
+                                                                        money_time
+                                                                      ) VALUES (                                                      
+                                                                        '$id',
+                                                                        '$amountpaid',
+                                                                        '$money_content',
+                                                                        '$time'
+                                                                      )");
+                $value = "Location:view.php?id=".$id;
+                header($value);
+                die;
+        }
+
+      if ( (isset($_GET['id']) and !empty($_GET['id'])) or ($_POST['id']) ){
         
         $domain_id  =   strip_tags($_GET['id']);
         $row        =   $db->get_row("SELECT * FROM domain_list Where domain_status = '1' and domain_id = '$domain_id' LIMIT 1");
@@ -18,6 +41,8 @@
       header("Location:tables.php?alert=4");
       die;
     }
+
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -95,12 +120,10 @@
               <div class="nav toggle">
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
-
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt=""><?php echo $_SESSION["name"].' '.$_SESSION["surname"];?>
-                    <span class=" fa fa-angle-down"></span>
+                    <img src="images/img.jpg" alt=""><?php echo $_SESSION["name"].' '.$_SESSION["surname"];?><span class="fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
@@ -179,7 +202,7 @@
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Registered Company</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
                           <select class="form-control" name="domain_company">
                           <?php
                                  $row_reg  = $db->get_row("SELECT * FROM registered_list WHERE reg_id = '$row->domain_company'");                                
@@ -198,9 +221,15 @@
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Open Closed Tracking</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
                           <input type="text" id="domain_link" name="domain_tracking" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $row->domain_tracking;?>">
                         </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Total Amount Paid</label>
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                <input type="text" id="domain_link" name="" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo MoneyTotal($row->domain_id).' TL';?>">
+                            </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Domain İnformation</label>
@@ -208,6 +237,7 @@
                           <textarea class="resizable_textarea form-control" name="content" placeholder="Domain İnformation Text"><?php echo $row->domain_content;?></textarea>
                         </div>
                       </div>
+
 
                       <div class="ln_solid"></div>
                       <div class="form-group">
@@ -226,6 +256,39 @@
                   </div>
                 </div>
               </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Domain Money<small></small></h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <br />
+                            <form method="GET" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">Amount Paid<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="" name="amountpaid" required="required" placeholder="10.5" class="form-control col-md-7 col-xs-12" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Amount Paid Description</label>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                        <textarea class="resizable_textarea form-control" name="description" placeholder="Amount Paid Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                        <input type="hidden" id="" name="id" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $_GET['id'];?>">
+                                        <button type="submit" class="btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
               <?php if ($row->domain_tracking == "Yes"){ ?>
                <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
