@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 19 Kas 2016, 11:08:45
+-- Üretim Zamanı: 16 Ara 2016, 17:05:42
 -- Sunucu sürümü: 10.1.16-MariaDB
 -- PHP Sürümü: 5.6.24
 
@@ -41,8 +41,8 @@ CREATE TABLE `domain_list` (
   `domain_expiration_date` int(11) NOT NULL,
   `domain_creation_date` int(11) NOT NULL,
   `domain_content` text COLLATE utf8_turkish_ci NOT NULL,
-  `domain_tracking` varchar(6) COLLATE utf8_turkish_ci NOT NULL,
-  `domain_status` int(1) NOT NULL
+  `domain_status` int(1) NOT NULL,
+  `domain_tracking` varchar(10) COLLATE utf8_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
@@ -53,9 +53,23 @@ CREATE TABLE `domain_list` (
 
 CREATE TABLE `domain_logs` (
   `logs_id` int(11) NOT NULL,
-  `logs_link` varchar(225) COLLATE utf8_turkish_ci NOT NULL,
+  `logs_link` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `logs_time` int(11) NOT NULL,
   `logs_type` varchar(50) COLLATE utf8_turkish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `domain_money`
+--
+
+CREATE TABLE `domain_money` (
+  `money_id` int(11) NOT NULL,
+  `money_domain_id` int(11) NOT NULL,
+  `money_value` varchar(10) COLLATE utf8_turkish_ci NOT NULL,
+  `money_content` text COLLATE utf8_turkish_ci NOT NULL,
+  `money_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
@@ -69,13 +83,6 @@ CREATE TABLE `registered_list` (
   `reg_title` varchar(250) NOT NULL,
   `reg_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tablo döküm verisi `registered_list`
---
-
-INSERT INTO `registered_list` (`reg_id`, `reg_title`, `reg_time`) VALUES
-(21, 'Godaddy', 1479539131);
 
 -- --------------------------------------------------------
 
@@ -92,13 +99,6 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Tablo döküm verisi `user`
---
-
-INSERT INTO `user` (`user_id`, `user_name`, `user_surname`, `user_mail`, `user_pass`) VALUES
-(1, 'Admin', 'Demo', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3');
-
---
 -- Dökümü yapılmış tablolar için indeksler
 --
 
@@ -113,6 +113,12 @@ ALTER TABLE `domain_list`
 --
 ALTER TABLE `domain_logs`
   ADD UNIQUE KEY `logs_id` (`logs_id`);
+
+--
+-- Tablo için indeksler `domain_money`
+--
+ALTER TABLE `domain_money`
+  ADD UNIQUE KEY `money_id` (`money_id`);
 
 --
 -- Tablo için indeksler `registered_list`
@@ -134,17 +140,22 @@ ALTER TABLE `user`
 -- Tablo için AUTO_INCREMENT değeri `domain_list`
 --
 ALTER TABLE `domain_list`
-  MODIFY `domain_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `domain_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 --
 -- Tablo için AUTO_INCREMENT değeri `domain_logs`
 --
 ALTER TABLE `domain_logs`
-  MODIFY `logs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `logs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+--
+-- Tablo için AUTO_INCREMENT değeri `domain_money`
+--
+ALTER TABLE `domain_money`
+  MODIFY `money_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- Tablo için AUTO_INCREMENT değeri `registered_list`
 --
 ALTER TABLE `registered_list`
-  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- Tablo için AUTO_INCREMENT değeri `user`
 --
