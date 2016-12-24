@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 16 Ara 2016, 17:05:42
--- Sunucu sürümü: 10.1.16-MariaDB
--- PHP Sürümü: 5.6.24
+-- Üretim Zamanı: 18 Ara 2016, 10:49:18
+-- Sunucu sürümü: 10.1.19-MariaDB
+-- PHP Sürümü: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -99,6 +99,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Tablo döküm verisi `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `user_surname`, `user_mail`, `user_pass`) VALUES
+(2, 'admin', 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3');
+
+--
 -- Dökümü yapılmış tablolar için indeksler
 --
 
@@ -140,7 +147,7 @@ ALTER TABLE `user`
 -- Tablo için AUTO_INCREMENT değeri `domain_list`
 --
 ALTER TABLE `domain_list`
-  MODIFY `domain_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
+  MODIFY `domain_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
 --
 -- Tablo için AUTO_INCREMENT değeri `domain_logs`
 --
@@ -150,17 +157,17 @@ ALTER TABLE `domain_logs`
 -- Tablo için AUTO_INCREMENT değeri `domain_money`
 --
 ALTER TABLE `domain_money`
-  MODIFY `money_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `money_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- Tablo için AUTO_INCREMENT değeri `registered_list`
 --
 ALTER TABLE `registered_list`
-  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- Tablo için AUTO_INCREMENT değeri `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
