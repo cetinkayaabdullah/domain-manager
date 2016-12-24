@@ -85,7 +85,7 @@
 
         <!-- page content -->
         <div class="right_col">
-            <!-- top tiles -->
+            <!-- top tiles @ibuykarslan github-->
             <div class="row tile_count">
                 <div class="col-md-4 col-sm-4 col-xs-4 tile_stats_count">
                     <span class="count_top"><i class="fa fa-user"></i> Total Domain</span>
@@ -103,7 +103,7 @@
                     <div class="count green"><?php MoneyTotalGeneral();?></div>
                 </div>
             </div>
-            <!-- /top tiles -->
+            <!-- top tiles @ibuykarslan github-->
           <div class="">        
             <div class="clearfix"></div>
             <div class="row">
