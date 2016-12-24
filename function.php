@@ -136,11 +136,33 @@
                 foreach ( $get_results as $db_rows ){
                     $total = $total+$db_rows->money_value;
                 }
-                return $total;
+                echo $total." TL";
+                return;
             }else{
 
-                $total = "0";
-                return $total;
+                $total = "0 TL";
+                echo $total;
+                return;
+
+            }
+
+        };
+
+        function MoneyTotalGeneral(){
+            global $db;
+            $total = 0;
+            $get_results   =   $db->get_results("SELECT * FROM domain_money ");
+            if ( $db->num_rows >= '1'){
+                foreach ( $get_results as $db_rows ){
+                    $total = $total+$db_rows->money_value;
+                }
+                echo $total." TL";
+                return;
+            }else{
+
+                $total = "0 TL";
+                echo $total;
+                return;
 
             }
 

@@ -20,6 +20,4 @@
 			$_title = "Domain Manager";
 			$_link  = "http://localhost/domain-manager/";
 
-			
-
 ?>
