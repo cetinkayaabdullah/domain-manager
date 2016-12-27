@@ -1,7 +1,6 @@
 <?php
 		require_once "../config.php";
 
-
 		$row		=	$db->get_row("SELECT * FROM domain_list WHERE domain_ext != 'other' ORDER BY domain_update_date ASC LIMIT 1");
 		$domain_id 	= 	$row->domain_id;
 		echo "Domain :  ".$domain_link 	= 	$row->domain_link;
