@@ -336,7 +336,8 @@
 
 		}
 
-		echo "Kalan Gün Sayısı : ".Days_Remaining($domain_id);
+		echo "Days Remaining : ".Days_Remaining($domain_id);
+		echo "<br><br><b>A domain every 10 seconds. Leave the browser open</b>";
 		header( "refresh:10;url=autoupload.php" );//Yenileme Süresi 10 Saniye
 
 ?>
