@@ -18,6 +18,6 @@
 			require_once "function.php";
 
 			$_title = "Domain Manager";
-			$_link  = "http://localhost/domain-manager/";
+			$_link  = "http://domain.sr/";
 
 ?>
