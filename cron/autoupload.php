@@ -293,8 +293,14 @@
 				$regex		= "/(Created on..............:) ([0-9]{4})-([a-zA-Z]{3})-([0-9]{2})/";
 				preg_match_all($regex, $baglan, $value);
 
-				$Creation_Date				=	$value[5][0].'.'.$value[4][0].'.'.$value[3][0];
-				$domain_creation_date		=	strtotime($Creation_Date);
+				if (isset($value[5][0]) and !empty($value[5][0] and isset($value[4][0]) and !empty($value[4][0]) and isset($value[3][0]) and !empty($value[3][0]))){
+                    $Creation_Date				=	$value[5][0].'.'.$value[4][0].'.'.$value[3][0];
+                    $domain_creation_date		=	strtotime($Creation_Date);
+                }else{
+                    $domain_creation_date       =   '';
+                }
+
+
 				
 				
 				/* Domain Başlangıç Süresini Bulmak İçin */
