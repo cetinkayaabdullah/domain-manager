@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26c9d1fa-1409-4f78-9315-6133cfbc6367" name="Default" comment="upload">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron/autoupload.php" afterPath="$PROJECT_DIR$/cron/autoupload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="26c9d1fa-1409-4f78-9315-6133cfbc6367" name="Default" comment="upload" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,49 +13,18 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <expand />
+    <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="autoupload.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="299" column="52" lean-forward="false" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
-              <folding>
-                <element signature="e#505#2764#0#PHP" expanded="false" />
-                <element signature="e#2772#5012#0#PHP" expanded="false" />
-                <element signature="e#5020#7298#0#PHP" expanded="false" />
-                <element signature="e#7303#9521#0#PHP" expanded="false" />
-                <marker date="1485163632106" expanded="true" signature="63:156" ph="SELECT * FRO... domain_list" />
-                <marker date="1485163632106" expanded="true" signature="351:415" ph="SELECT * FRO... domain_list" />
-                <marker date="1485163632106" expanded="true" signature="2165:2751" ph="UPDATE domai... " />
-                <marker date="1485163632106" expanded="true" signature="4413:4999" ph="UPDATE domai... " />
-                <marker date="1485163632106" expanded="true" signature="6699:7285" ph="UPDATE domai... " />
-                <marker date="1485163632106" expanded="true" signature="8922:9508" ph="UPDATE domai... " />
-                <marker date="1485163632106" expanded="true" signature="11480:12066" ph="UPDATE domai... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,11 +49,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,31 +70,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain-manager" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="domain-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-manager" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
@@ -165,15 +148,6 @@
     </configuration>
     <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
       <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -216,6 +190,7 @@
       <workItem from="1484922755215" duration="1265000" />
       <workItem from="1485163514875" duration="257000" />
       <workItem from="1485171773579" duration="3000" />
+      <workItem from="1503529032310" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1482819422049</created>
@@ -256,17 +231,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9477000" />
+    <option name="totallyTimeSpent" value="9646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1386" height="788" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09115139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27526397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06711916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -283,7 +257,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -310,53 +284,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#505#2764#0#PHP" expanded="false" />
-            <element signature="e#2772#5012#0#PHP" expanded="false" />
-            <element signature="e#5020#7298#0#PHP" expanded="false" />
-            <element signature="e#7303#9521#0#PHP" expanded="false" />
-            <marker date="1485163632106" expanded="true" signature="63:156" ph="SELECT * FRO... domain_list" />
-            <marker date="1485163632106" expanded="true" signature="351:415" ph="SELECT * FRO... domain_list" />
-            <marker date="1485163632106" expanded="true" signature="2165:2751" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="4413:4999" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="6699:7285" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="8922:9508" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="11480:12066" ph="UPDATE domai... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_list">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86e90724-52c1-4ace-badb-4f0ad2045b14/console.sql">
+    <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_list" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86e90724-52c1-4ace-badb-4f0ad2045b14/console.sql" />
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <marker date="1475570674962" expanded="true" signature="174:262" ph="SELECT * FRO... domain_list" />
-            <marker date="1475570674962" expanded="true" signature="2012:2598" ph="UPDATE domai... " />
-            <marker date="1475570674962" expanded="true" signature="4260:4846" ph="UPDATE domai... " />
-            <marker date="1475570674962" expanded="true" signature="6546:7132" ph="UPDATE domai... " />
-            <marker date="1475570674962" expanded="true" signature="8769:9355" ph="UPDATE domai... " />
-            <marker date="1475570674962" expanded="true" signature="11043:11629" ph="UPDATE domai... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -371,76 +317,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="38" selection-end-column="88" />
-          <folding>
-            <marker date="1479816437784" expanded="true" signature="724:1730" ph="INSERT INTO domain_list... " />
-            <marker date="1479816437784" expanded="true" signature="8003:8032" ph="SELECT * FRO... registered_list" />
-            <marker date="1479816437784" expanded="true" signature="12055:12087" ph="..." />
-            <marker date="1479816437784" expanded="true" signature="13637:13644" ph="×" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_logs">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_logs" />
     <entry file="file://$PROJECT_DIR$/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="239" column="0" lean-forward="true" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-          <folding>
-            <marker date="1482564939161" expanded="true" signature="399:1312" ph="INSERT INTO domain_money... " />
-            <marker date="1482564939161" expanded="true" signature="1607:1695" ph="SELECT * FRO... domain_list" />
-            <marker date="1482564939161" expanded="true" signature="10466:10533" ph="SELECT * FRO... registered_list" />
-            <marker date="1482564939161" expanded="true" signature="10813:10842" ph="SELECT * FRO... registered_list" />
-            <marker date="1482564939161" expanded="true" signature="16960:17047" ph="SELECT * FRO... domain_logs" />
-            <marker date="1482564939161" expanded="true" signature="21035:21067" ph="..." />
-            <marker date="1482564939161" expanded="true" signature="22617:22624" ph="×" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_money">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_money" />
     <entry file="file://$PROJECT_DIR$/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="139" column="23" lean-forward="false" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
-          <folding>
-            <element signature="n#Connect#0;n#!!top" expanded="false" />
-            <element signature="n#Days_Remaining#0;n#!!top" expanded="false" />
-            <element signature="n#Days_Update#0;n#!!top" expanded="false" />
-            <element signature="n#Name_Server_IP#0;n#!!top" expanded="false" />
-            <element signature="n#login#0;n#!!top" expanded="false" />
-            <element signature="n#Registered#0;n#!!top" expanded="false" />
-            <element signature="n#Link_Control#0;n#!!top" expanded="false" />
-            <marker date="1482564939158" expanded="true" signature="582:666" ph="SELECT * FRO... domain_list" />
-            <marker date="1482564939158" expanded="true" signature="1822:1875" ph="SELECT * FRO... registered_list" />
-            <marker date="1482564939158" expanded="true" signature="2846:3513" ph="INSERT INTO domain_logs... " />
-            <marker date="1482564939158" expanded="true" signature="3676:4345" ph="INSERT INTO domain_logs... " />
-            <marker date="1482564939158" expanded="true" signature="4537:4570" ph="SELECT * FRO... ${$value1}" />
-            <marker date="1482564939158" expanded="true" signature="4537:4596" ph="SELECT * FRO... domain_money" />
-            <marker date="1482564939158" expanded="true" signature="5100:5126" ph="SELECT * FRO... domain_money" />
-            <marker date="1482564939158" expanded="true" signature="5100:5127" ph="SELECT * FRO... domain_money" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,13 +343,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="105" column="49" lean-forward="false" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-          <folding>
-            <marker date="1482565387159" expanded="true" signature="99:186" ph="SELECT * FRO... domain_list" />
-            <marker date="1482565387159" expanded="true" signature="3770:3795" ph="SELECT * FRO... domain_list" />
-            <marker date="1482565387159" expanded="true" signature="4140:4169" ph="SELECT * FRO... registered_list" />
-            <marker date="1482565387159" expanded="true" signature="8076:8105" ph="SELECT * FRO... registered_list" />
-            <marker date="1482565387159" expanded="true" signature="8546:8612" ph="SELECT * FRO... domain_list" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,21 +364,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="299" column="52" lean-forward="false" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
-          <folding>
-            <element signature="e#505#2764#0#PHP" expanded="false" />
-            <element signature="e#2772#5012#0#PHP" expanded="false" />
-            <element signature="e#5020#7298#0#PHP" expanded="false" />
-            <element signature="e#7303#9521#0#PHP" expanded="false" />
-            <marker date="1485163632106" expanded="true" signature="63:156" ph="SELECT * FRO... domain_list" />
-            <marker date="1485163632106" expanded="true" signature="351:415" ph="SELECT * FRO... domain_list" />
-            <marker date="1485163632106" expanded="true" signature="2165:2751" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="4413:4999" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="6699:7285" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="8922:9508" ph="UPDATE domai... " />
-            <marker date="1485163632106" expanded="true" signature="11480:12066" ph="UPDATE domai... " />
-          </folding>
+        <state relative-caret-position="421">
+          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
