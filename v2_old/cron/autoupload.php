@@ -29,22 +29,21 @@
 				
 				if (isset ($new[1][2])){ $domain_ns3 = strip_tags($new[1][2]); }else{ $domain_ns3 = ""; }
 				/* Name Server Bulmak İçin*/
-				
+
+                $regex		= "/(Registry Expiry Date:)( )(?<Y>[0-9][0-9][0-9][0-9])-(?<A>[0-9][0-9])-(?<G>[0-9][0-9])/";
+                preg_match_all($regex, $baglan, $value);
+
+                $Expiration_Date			=	$value[5][0].'-'.$value[4][0].'-'.$value[3][0];
+                $domain_expiration_date		=	strtotime($Expiration_Date);
+
 				/* Domain Bitiş Süresini Bulmak İçin */
-				$regex		= "/(Expiration Date:)( )((?<G>[0-9][0-9]|[0][0-9])-(?<A>[a-z]*))-(?<Y>[0-9][0-9][0-9][0-9])/";
-				preg_match_all($regex, $baglan, $value);
 
-				$Expiration_Date			=	$value[4][0].'-'.$value[5][0].'-'.$value[6][0];
-				$domain_expiration_date		=	strtotime($Expiration_Date);
+                /* Domain Başlangıç Süresini Bulmak İçin */
+                $regex		= "/(Creation Date:)( )(?<Y>[0-9][0-9][0-9][0-9])-(?<A>[0-9][0-9])-(?<G>[0-9][0-9])/";
+                preg_match_all($regex, $baglan, $value);
 
-				/* Domain Bitiş Süresini Bulmak İçin */
-
-				/* Domain Başlangıç Süresini Bulmak İçin */
-				$regex		= "/(Creation Date:)( )((?<G>[0-9][0-9]|[0][0-9])-(?<A>[a-z]*))-(?<Y>[0-9][0-9][0-9][0-9])/";
-				preg_match_all($regex, $baglan, $value);
-
-				$Creation_Date				=	$value[4][0].'-'.$value[5][0].'-'.$value[6][0];
-				$domain_creation_date		=	strtotime($Creation_Date);
+                $Creation_Date				=	$value[5][0].'-'.$value[4][0].'-'.$value[3][0];
+                $domain_creation_date		=	strtotime($Creation_Date);
 				
 
 				/* Domain Başlangıç Süresini Bulmak İçin */

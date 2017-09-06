@@ -119,10 +119,15 @@
                       <thead>
                         <tr>
                           <th>Domain Name</th>
+                          <th>Creation Date</th>
                           <th>Expiration Date</th>
                           <th>Registered Company</th>
                           <th>Day</th>
                           <th>Last Check Day</th>
+                          <th>Name Server 1</th>
+                          <th>Name Server 2</th>
+                          <th>Domain İnformation</th>
+                          <th>Total Amount Paid</th>
                           <th>Actions</th>
                         </tr>
                       </thead>
@@ -133,10 +138,15 @@
                         foreach ( $results as $db_rows ){ ?>
                         <tr>
                             <td><a href="<?php echo $_link.'view.php?id='.$db_rows->domain_id;?>"><?php echo $db_rows->domain_link;?></a></td>
+                            <td><?php echo date('d/m/Y',$db_rows->domain_creation_date);?></td>
                             <td><?php echo date('d/m/Y',$db_rows->domain_expiration_date);?></td>
                             <td><?php Registered($db_rows->domain_company);?></td>
                             <td><?php echo Days_Remaining($db_rows->domain_id);?></td>
                             <td><?php echo Days_Update($db_rows->domain_update_date);?></td>
+                            <td><?php echo $db_rows->domain_ns1;?></td>
+                            <td><?php echo $db_rows->domain_ns2;?></td>
+                            <td><?php echo $db_rows->domain_content;?></td>
+                            <td><?php MoneyTotal($db_rows->domain_id);?></td>
                             <td>
                             <a href='<?php echo $_link.'delete.php?id='.$db_rows->domain_id;?>'>
                                 <i class='fa fa-trash'></i>
@@ -150,7 +160,6 @@
                             </a>
                             <?php } ?>
                             </td>
-                            
                         </tr>
                       <?php }} ?>
                       </tbody>
