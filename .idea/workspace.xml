@@ -24,7 +24,26 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v2_old/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+              <folding>
+                <element signature="e#352#2635#0#PHP" expanded="false" />
+                <element signature="e#2643#4883#0#PHP" expanded="false" />
+                <marker date="1506161546476" expanded="true" signature="174:262" ph="SELECT * FRO... domain_list" />
+                <marker date="1506161546476" expanded="true" signature="2036:2622" ph="UPDATE domai... " />
+                <marker date="1506161546476" expanded="true" signature="4284:4870" ph="UPDATE domai... " />
+                <marker date="1506161546476" expanded="true" signature="6506:7092" ph="UPDATE domai... " />
+                <marker date="1506161546476" expanded="true" signature="8780:9366" ph="UPDATE domai... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +58,8 @@
         <option value="$PROJECT_DIR$/include/sidebar/menu.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/cron/autoupload.php" />
+        <option value="$PROJECT_DIR$/v2_old/view.php" />
+        <option value="$PROJECT_DIR$/v2_old/api.php" />
       </list>
     </option>
   </component>
@@ -49,7 +70,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1386" />
@@ -76,6 +97,11 @@
             <path>
               <item name="domain-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="domain-manager" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="domain-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-manager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="v2_old" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -191,6 +217,7 @@
       <workItem from="1485163514875" duration="257000" />
       <workItem from="1485171773579" duration="3000" />
       <workItem from="1503529032310" duration="169000" />
+      <workItem from="1506160725470" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1482819422049</created>
@@ -231,12 +258,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9646000" />
+    <option name="totallyTimeSpent" value="10787000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1386" height="788" extended-state="1" />
+    <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27526397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11010558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06711916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -280,101 +308,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/autoupload.php" />
+    <entry file="file://$PROJECT_DIR$/cron/autoupload.php" />
     <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_list" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86e90724-52c1-4ace-badb-4f0ad2045b14/console.sql" />
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron/cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="38" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php" />
+    <entry file="file://$PROJECT_DIR$/cron/cron.php" />
+    <entry file="file://$PROJECT_DIR$/form.php" />
     <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_logs" />
-    <entry file="file://$PROJECT_DIR$/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="239" column="0" lean-forward="true" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/view.php" />
     <entry file="dbDummy://dbtable:/25bfaa9c/86e90724-52c1-4ace-badb-4f0ad2045b14/domain_manager.domain_money" />
-    <entry file="file://$PROJECT_DIR$/function.php">
+    <entry file="file://$PROJECT_DIR$/function.php" />
+    <entry file="file://$PROJECT_DIR$/table.php" />
+    <entry file="file://$PROJECT_DIR$/include/sidebar/menu.php" />
+    <entry file="file://$PROJECT_DIR$/config.php" />
+    <entry file="file://$PROJECT_DIR$/cron/autoupload.php" />
+    <entry file="file://$PROJECT_DIR$/settings.php" />
+    <entry file="file://$PROJECT_DIR$/v2_old/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="139" column="23" lean-forward="false" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="-5015">
+          <caret line="248" column="26" lean-forward="false" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
+          <folding>
+            <marker date="1506160991206" expanded="true" signature="399:1312" ph="INSERT INTO domain_money... " />
+            <marker date="1506160991206" expanded="true" signature="1607:1695" ph="SELECT * FRO... domain_list" />
+            <marker date="1506160991206" expanded="true" signature="10468:10535" ph="SELECT * FRO... registered_list" />
+            <marker date="1506160991206" expanded="true" signature="10815:10844" ph="SELECT * FRO... registered_list" />
+            <marker date="1506160991206" expanded="true" signature="17160:17247" ph="SELECT * FRO... domain_logs" />
+            <marker date="1506160991206" expanded="true" signature="20993:21025" ph="..." />
+            <marker date="1506160991206" expanded="true" signature="22575:22582" ph="×" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/table.php">
+    <entry file="file://$PROJECT_DIR$/v2_old/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="105" column="49" lean-forward="false" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/sidebar/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron/autoupload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="169">
+          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+          <folding>
+            <element signature="e#352#2635#0#PHP" expanded="false" />
+            <element signature="e#2643#4883#0#PHP" expanded="false" />
+            <marker date="1506161546476" expanded="true" signature="174:262" ph="SELECT * FRO... domain_list" />
+            <marker date="1506161546476" expanded="true" signature="2036:2622" ph="UPDATE domai... " />
+            <marker date="1506161546476" expanded="true" signature="4284:4870" ph="UPDATE domai... " />
+            <marker date="1506161546476" expanded="true" signature="6506:7092" ph="UPDATE domai... " />
+            <marker date="1506161546476" expanded="true" signature="8780:9366" ph="UPDATE domai... " />
+          </folding>
         </state>
       </provider>
     </entry>

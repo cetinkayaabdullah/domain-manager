@@ -147,6 +147,8 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
+
+
                     <br />
                     <form method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="update.php">
 
@@ -244,6 +246,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button type="submit" class="btn btn-primary">Cancel</button>
                           <button type="submit" class="btn btn-success">Update</button>
+                          <a href="<?php echo $link = trim ('http://whois.hosting.info.tr/'.$row->domain_link); ?>" target="_blank"><button type="button" class="btn btn-primary">Whois</button></a>
                           <input type="hidden" name="domain_id" value="<?php echo $row->domain_id;?>">
                         </div>
                       </div>
@@ -298,6 +301,7 @@
                   </div>
                   <div class="x_content">
                     <p class="text-muted font-13 m-b-30"></p>
+
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
                         <tr>
@@ -325,10 +329,6 @@
                 </div>
               </div>
               <?php } ?>
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                
-                <iframe src="<?php echo $link = trim ('http://whois.hosting.info.tr/'.$row->domain_link); ?>" width="1632" height="500"></iframe>
-              </div>
             </div>          
           </div>
          

@@ -14,7 +14,7 @@
 				
 				$uzanti = $row->domain_ext;
 		
-		if ( $uzanti == '.com' or $uzanti == '.net' ){
+		if ( $uzanti == '.com' or $uzanti == '.net'  or $uzanti == '.biz' ){
 					
 				/* Name Server Bulmak İçin*/
 				$link		=	trim ( 'http://whois.hosting.info.tr/'.$row->domain_link);
@@ -135,72 +135,6 @@
 																		 WHERE domain_id = '$domain_id' ");
 				
 		}
-
-		
-
-		if ( $uzanti == '.biz' ){
-					
-				/* Name Server Bulmak İçin*/
-				$link		=	trim ( 'http://whois.hosting.info.tr/'.$row->domain_link);
-				$baglan 	=	Connect ($link);
-				$regex		=	"/Name Server:(.*?)([a-zA-ZÇŞĞÜÖİçşğüöı.0-9]+)/";
-				preg_match_all($regex, $baglan, $new);
-				
-				$domain_ns1 = strip_tags($new[2][0]);
-				$domain_ns2 = strip_tags($new[2][1]);
-				
-				
-				if (isset ($new[2][2])){ $domain_ns3 = strip_tags($new[2][2]); }else{ $domain_ns3 = ""; }
-				/* Name Server Bulmak İçin*/
-				
-				
-				/* Domain Bitiş Süresini Bulmak İçin */
-				$regex						=	"/(Domain Expiration Date:)(.*?)([A-Za-z]*)( )([A-Za-z]*) ([0-9][0-9])(.*?)([0-9][0-9][0-9][0-9])/";
-				preg_match_all($regex, $baglan, $value);
-
-				$Expiration_Date			=	$value[6][0].'.'.$value[5][0].'.'.$value[8][0];
-				$domain_expiration_date		=	strtotime($Expiration_Date);
-				/* Domain Bitiş Süresini Bulmak İçin */
-
-				
-
-				/* Domain Başlangıç Süresini Bulmak İçin */
-				$regex						=	"/(Domain Registration Date:)(.*?)([A-Za-z]*)( )([A-Za-z]*) ([0-9][0-9])(.*?)([0-9][0-9][0-9][0-9])/";
-				preg_match_all($regex, $baglan, $value);
-
-				$Creation_Date				=	$value[6][0].'.'.$value[5][0].'.'.$value[8][0];
-				$domain_creation_date		=	strtotime($Creation_Date);
-
-				/* Domain Başlangıç Süresini Bulmak İçin */
-				
-				/* Name Serverların IP Bulmak İçin */
-				$domain_ip1		=	Name_Server_IP($domain_ns1);
-				$domain_ip2		=	Name_Server_IP($domain_ns2);
-				
-				if ($domain_ns3 != ""){
-										$domain_ip3		=	Name_Server_IP($domain_ns3);
-				}else{
-					$domain_ip3	= '';
-				}
-				/* Name Serverların IP Bulmak İçin */
-				
-				$domain_update_date		=	time();
-				$result					=	$db->query("UPDATE domain_list SET
-
-																			domain_ns1				=		'$domain_ns1',
-																			domain_ns2				=		'$domain_ns2',
-																			domain_ns3				=		'$domain_ns3',
-																			domain_ip1				=		'$domain_ip1',
-																			domain_ip2				=		'$domain_ip2',
-																			domain_ip3				=		'$domain_ip3',
-																			domain_update_date 		= 		'$domain_update_date',
-																			domain_expiration_date	=		'$domain_expiration_date',
-																			domain_creation_date	=		'$domain_creation_date'
-
-																		 WHERE domain_id = '$domain_id' ");
-				
-		}
-
 
 		if ( $uzanti == '.info' ){
 					
