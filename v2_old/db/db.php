@@ -4,7 +4,7 @@
 		@include_once "ezsql/ez_sql_mysql.php";
 		
 		// Veri Tabanı Bilgileri		
-		$db_kullanici	=	"root";
+		$db_kullanici		=	"root";
 		$db_parola		=	"";
 		$db_isim		=	"domain_manager";
 		$db_sunucu		=	"localhost";
