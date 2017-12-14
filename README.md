@@ -1,4 +1,4 @@
-# domain-manager
-Domain Management System
-
-Daha iyisini ve daha kalitelisini yazmak için kolları sıvadık :)
+# Domain Manager
+For the best<br>
+Let's re-code :)<br>
+New Theme : https://github.com/VinceG/Bootstrap-Admin-Theme
