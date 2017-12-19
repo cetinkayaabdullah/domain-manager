@@ -1,7 +1,6 @@
 <?php
         require_once  "config.php";
         login();
-        $results    = $db->get_results("SELECT * FROM domain_list Where domain_status = '1' ORDER BY domain_expiration_date ASC ");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -134,7 +133,8 @@
                       <tbody>
 
                       <?php
-                       if ( $db->num_rows >= '1'){
+                       $results    = $db->get_results("SELECT * FROM domain_list Where domain_status = '1' ORDER BY domain_expiration_date ASC ");
+                      if ( $db->num_rows >= '1'){
                         foreach ( $results as $db_rows ){ ?>
                         <tr>
                             <td><a href="<?php echo $_link.'view.php?id='.$db_rows->domain_id;?>"><?php echo $db_rows->domain_link;?></a></td>
