@@ -5,4 +5,4 @@ New Theme : https://github.com/VinceG/Bootstrap-Admin-Theme
 
 Takıldığınız yerde mail@abdullahcetinkaya.com.tr
 
-# Not : Yoğunluktan sebeb geliştirmeye başlayamadım kaldı öylece :) şuanki hali ile çalışır durumda linux ortamında.
+#şuanki hali çalışmıyor çünkü whois bilgilerini aldığımız sistem kapandı.
